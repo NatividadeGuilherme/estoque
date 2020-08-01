@@ -1,20 +1,12 @@
-package br.com.natividade.estoque.models;
+package br.com.natividade.estoque.usecase.domain;
 
 import java.time.LocalDate;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
-@Entity
-public class Produto {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProdutoDomain {
+
 	private long id;
 	
 	private String nome;
@@ -51,7 +43,7 @@ public class Produto {
 	public long getId() {
 		return id;
 	}
-	
+
 	public void setId(long id) {
 		this.id = id;
 	}

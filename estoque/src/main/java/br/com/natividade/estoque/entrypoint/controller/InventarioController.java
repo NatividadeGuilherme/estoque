@@ -1,4 +1,4 @@
-package br.com.natividade.estoque.controller;
+package br.com.natividade.estoque.entrypoint.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import br.com.natividade.estoque.dao.InventarioDAO;
-import br.com.natividade.estoque.models.Inventario;
+import br.com.natividade.estoque.dataprovider.dao.InventarioDAO;
+import br.com.natividade.estoque.dataprovider.model.Inventario;
 
 @Controller
 @RequestMapping("/inventario")

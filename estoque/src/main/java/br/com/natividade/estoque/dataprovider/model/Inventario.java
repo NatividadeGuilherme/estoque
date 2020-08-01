@@ -1,4 +1,4 @@
-package br.com.natividade.estoque.models;
+package br.com.natividade.estoque.dataprovider.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
